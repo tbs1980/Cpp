@@ -20,4 +20,5 @@
 *.out
 *.app
 
+NotForGitHub/*
 build/*
