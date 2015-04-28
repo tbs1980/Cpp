@@ -24,3 +24,5 @@ NotForGitHub/*
 build/*
 
 EigenMatrixIO/build
+
+Boost_SharedObjCreation/build/
