@@ -23,5 +23,7 @@
 NotForGitHub/*
 build/*
 
-EigenMatrixIO/build
-EigenCplxVectTpRealVect/build
+EigenMatrixIO/build/
+Boost_SharedObjCreation/build/
+EigenCplxVectTpRealVect/build/
+
