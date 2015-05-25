@@ -24,3 +24,4 @@ NotForGitHub/*
 build/*
 
 EigenMatrixIO/build
+EigenCplxVectTpRealVect/build
