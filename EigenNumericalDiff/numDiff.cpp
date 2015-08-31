@@ -72,7 +72,7 @@ int main(void)
     const int numDims = 10;
 
     sineFunctorType sf;
-    numDiffType nd;
+    numDiffType nd(sf);
 
     InputType x = InputType::Random(numDims);
     JacobianType dx(1,numDims);
