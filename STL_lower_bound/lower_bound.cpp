@@ -5,17 +5,18 @@
 int main(void)
 {
 
-	std::vector<int> v(10);
+	std::vector<double> v(10);
 
 	for(size_t i=0;i<v.size();++i)
 	{
 		v[i] =  i;
+		std::cout<<i<<"\t"<<v[i]<<std::endl;
 	}
 
 
-	std::vector<int>::iterator low;
+	std::vector<double>::iterator low;
 
-	int val=-1;
+	double val=-1;
 	low = std::lower_bound (v.begin(), v.end(), val);
 	std::cout<<"val= "<<val<<" position of lower_bound = "<<low-v.begin()<<std::endl;
 
@@ -23,11 +24,19 @@ int main(void)
 	low = std::lower_bound (v.begin(), v.end(), val);
 	std::cout<<"val= "<<val<<" position of lower_bound = "<<low-v.begin()<<std::endl;
 
-	val=5;
+	val=5.1;
 	low = std::lower_bound (v.begin(), v.end(), val);
 	std::cout<<"val= "<<val<<" position of lower_bound = "<<low-v.begin()<<std::endl;
 
-	val=9;
+	val=5.5;
+	low = std::lower_bound (v.begin(), v.end(), val);
+	std::cout<<"val= "<<val<<" position of lower_bound = "<<low-v.begin()<<std::endl;
+
+	val=9.9;
+	low = std::lower_bound (v.begin(), v.end(), val);
+	std::cout<<"val= "<<val<<" position of lower_bound = "<<low-v.begin()<<std::endl;
+
+	val=10;
 	low = std::lower_bound (v.begin(), v.end(), val);
 	std::cout<<"val= "<<val<<" position of lower_bound = "<<low-v.begin()<<std::endl;
 
